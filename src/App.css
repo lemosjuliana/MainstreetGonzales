@@ -1,0 +1,10 @@
+
+.hero {
+  position: relative;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
