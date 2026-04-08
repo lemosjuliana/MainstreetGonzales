@@ -1,5 +1,12 @@
+import Navbar from "../components/layout/Navbar"
+
 function Businesses() {
-  return <div>Businesses</div>
+  return (
+    <>
+      <Navbar />
+      <div>Businesses</div>
+    </>
+  )
 }
 
 export default Businesses

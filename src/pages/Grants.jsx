@@ -1,5 +1,12 @@
+import Navbar from "../components/layout/Navbar"
+
 function Grants() {
-  return <div>Grants</div>
+  return (
+    <>
+      <Navbar />
+      <div>Grants</div>
+    </>
+  )
 }
 
 export default Grants
