@@ -104,7 +104,7 @@ function Navbar() {
           border: none;
           color: #333;
           font-family: 'IBM Plex Serif', serif;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 1rem;
           transition: all 0.3s ease;
           padding: 0.5rem 1rem;
