@@ -1,11 +1,10 @@
-import Navbar from "../components/layout/Navbar"
+import PageLayout from "../components/layout/PageLayout"
 
 function Businesses() {
   return (
-    <>
-      <Navbar />
+    <PageLayout>
       <div>Businesses</div>
-    </>
+    </PageLayout>
   )
 }
 

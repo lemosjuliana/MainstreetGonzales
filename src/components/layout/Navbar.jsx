@@ -22,6 +22,46 @@ function Navbar() {
 
   return (
     <>
+      <nav>
+        <a href="/" className="navbar-logo">
+        <img src={logo} alt="Main Street Logo" className="navbar-logo-img" />
+        </a>
+
+        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <li>
+            <button onClick={() => handleNavClick('/')} className={location.pathname === '/' ? 'active' : ''}>
+              Home
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick('/businesses')} className={location.pathname === '/businesses' ? 'active' : ''}>
+              Businesses
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick('/events')} className={location.pathname === '/events' ? 'active' : ''}>
+              Events
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick('/grants')} className={location.pathname === '/grants' ? 'active' : ''}>
+              Grants
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick('/about')} className={location.pathname === '/about' ? 'active' : ''}>
+              About Us
+            </button>
+          </li>
+        </ul>
+
+        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
       <style>{`
         * {
           margin: 0;
@@ -192,46 +232,6 @@ function Navbar() {
           }
         }
       `}</style>
-
-      <nav>
-        <a href="/" className="navbar-logo">
-        <img src={logo} alt="Main Street Logo" className="navbar-logo-img" />
-        </a>
-
-        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li>
-            <button onClick={() => handleNavClick('/')} className={location.pathname === '/' ? 'active' : ''}>
-              Home
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('/businesses')} className={location.pathname === '/businesses' ? 'active' : ''}>
-              Businesses
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('/events')} className={location.pathname === '/events' ? 'active' : ''}>
-              Events
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('/grants')} className={location.pathname === '/grants' ? 'active' : ''}>
-              Grants
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick('/about')} className={location.pathname === '/about' ? 'active' : ''}>
-              About Us
-            </button>
-          </li>
-        </ul>
-
-        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
     </>
   )
 }

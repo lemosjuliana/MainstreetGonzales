@@ -1,11 +1,10 @@
-import Navbar from "../components/layout/Navbar"
+import PageLayout from "../components/layout/PageLayout"
 
 function Grants() {
   return (
-    <>
-      <Navbar />
+    <PageLayout>
       <div>Grants</div>
-    </>
+    </PageLayout>
   )
 }
 

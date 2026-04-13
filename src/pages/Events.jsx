@@ -1,11 +1,10 @@
-import Navbar from "../components/layout/Navbar"
+import PageLayout from "../components/layout/PageLayout"
 
 function Events() {
   return (
-    <>
-      <Navbar />
+    <PageLayout>
       <div>Events</div>
-    </>
+    </PageLayout>
   )
 }
 
