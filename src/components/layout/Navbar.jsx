@@ -137,7 +137,7 @@ function Navbar() {
         .hamburger span {
           width: 25px;
           height: 3px;
-          background-color: #333;
+          background-color: #210B02;
           border-radius: 2px;
           transition: all 0.3s ease;
         }
