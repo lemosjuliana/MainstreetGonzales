@@ -27,7 +27,7 @@ function Hero() {
           justify-content: flex-start;
           overflow: hidden;
           margin: 0 calc(-50vw + 50%);
-          margin-top: -2.5rem;
+          margin-top: -2 rem;
         }
 
         .hero-background {

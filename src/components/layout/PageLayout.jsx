@@ -3,9 +3,9 @@ import Footer from './Footer'
 
 function PageLayout({ children }) {
   return (
-    <div style={styles.pageWrapper}>
+    <div className="page-wrapper">
       <Navbar />
-      <main style={styles.mainContent}>
+      <main>
         {children}
       </main>
       <Footer />
@@ -60,21 +60,6 @@ function PageLayout({ children }) {
       `}</style>
     </div>
   )
-}
-
-const styles = {
-  pageWrapper: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh'
-  },
-  mainContent: {
-    flex: 1,
-    padding: '3rem 2rem',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    width: '100%'
-  }
 }
 
 export default PageLayout
