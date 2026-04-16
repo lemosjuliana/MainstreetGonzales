@@ -37,7 +37,8 @@ function Explore() {
 
   return (
     <section className="explore-section">
-      <h1 className="explore-title">Explore Gonzales</h1>
+      <h1 className="explore-title"><span className="explore-highlight">Explore</span> Gonzales Main Street</h1>
+      <p className="explore-description">Gonzales Main Street will be a driving force in ensuring that our iconic downtown contributes to our community’s well-being. Gonzales Main Street will effectively carry out a program to preserve and enhance our downtown through promotions, tourism, encouraging local spending, and inspiring lifelong preservation and revitalization of our historic community.</p>
       <div className="explore-cards">
         {/* Shop Card */}
         <div
@@ -98,7 +99,15 @@ function Explore() {
           font-weight: 700;
           color: #333;
           text-align: left;
+        }
+
+        .explore-description {
+          text-align: left;
           margin-bottom: 3rem;
+        }
+
+        .explore-highlight {
+          color: #BE400E;
         }
 
         .explore-cards {

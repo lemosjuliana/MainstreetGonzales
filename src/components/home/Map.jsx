@@ -13,7 +13,8 @@ const blocks = [
 export default function Map() {
   return (
     <section style={{ padding: '2rem 0' }}>
-      <h1 className="map-title">Navigate Gonzales Main Street</h1>
+      <h1 className="map-title"><span className="map-title-highlight">Navigate</span> Gonzales Main Street</h1>
+      <p className="map-description">The Gonzales Main Street program aims to create an experience-rich environment while preserving the beautiful historic features of our downtown. Our vision is for Gonzales to become a destination for those seeking a unique, friendly small-town atmosphere and keeping our role in Texas History alive.</p>
 
       <MapContainer
         center={[29.5035, -97.4535]}
@@ -38,14 +39,24 @@ export default function Map() {
         ))}
       </MapContainer>
 
-      <style jsx>{`
+      <style>{`
         .map-title {
+          padding: 1rem 2rem;
           font-family: 'IBM Plex Serif', serif;
           font-size: 2.5rem;
           font-weight: 700;
           color: #333;
           text-align: left;
-          margin-bottom: 3rem;
+        }
+
+        .map-title-highlight {
+          color: #BE400E;
+        }
+
+        .map-description {
+          padding: 1rem 2rem;
+          text-align: left;
+          margin-bottom: 2rem;
         }
       `}</style>
     </section>
