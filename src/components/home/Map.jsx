@@ -13,7 +13,7 @@ const blocks = [
 export default function Map() {
   return (
     <section style={{ padding: '2rem 0' }}>
-      <h1 className="map-title">Location Map</h1>
+      <h1 className="map-title">Navigate Gonzales Main Street</h1>
 
       <MapContainer
         center={[29.5035, -97.4535]}
