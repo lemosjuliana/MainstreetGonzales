@@ -22,70 +22,36 @@ function FeaturedEvents() {
     return futureEvents[0]
   }, [])
 
-  if (!upcomingEvent) {
-    return (
-      <section className="featured-events-wrapper">
-        <h1 className="featured-events-title">Join Us for our Upcoming Event</h1>
-        <div className="featured-events-section">
-          <p className="no-events">No upcoming events at this time.</p>
-        </div>
-
-        <style>{`
-          .featured-events-wrapper {
-            padding: 4rem 2rem;
-            background-color: #fff;
-            margin: 0;
-          }
-
-          .featured-events-title {
-            font-family: 'IBM Plex Serif', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #333;
-            text-align: left;
-            margin-bottom: 3rem;
-          }
-
-          .featured-events-section {
-            padding: 0;
-            background-color: #fff;
-            margin: 0;
-          }
-
-          .no-events {
-            text-align: center;
-            color: #666;
-            font-size: 1rem;
-          }
-        `}</style>
-      </section>
-    )
-  }
-
   return (
     <section className="featured-events-wrapper">
       <h1 className="featured-events-title">Join Us for our Upcoming Event</h1>
-      <div className="featured-event-container">
-        {/* Left Side - Event Info */}
-        <div className="event-info">
-          <h2 className="event-title">{upcomingEvent.title}</h2>
-          <p className="event-description">{upcomingEvent.description}</p>
-          <div className="event-details">
-            <p><strong>Date:</strong> {new Date(upcomingEvent.date).toLocaleDateString()}</p>
-            <p><strong>Location:</strong> {upcomingEvent.location}</p>
+      {!upcomingEvent ? (
+        <div className="featured-events-section">
+          <p className="no-events">No upcoming events at this time.</p>
+        </div>
+      ) : (
+        <div className="featured-event-container">
+          {/* Left Side - Event Info */}
+          <div className="event-info">
+            <h2 className="event-title">{upcomingEvent.title}</h2>
+            <p className="event-description">{upcomingEvent.description}</p>
+            <div className="event-details">
+              <p><strong>Date:</strong> {new Date(upcomingEvent.date).toLocaleDateString()}</p>
+              <p><strong>Location:</strong> {upcomingEvent.location}</p>
+            </div>
+          </div>
+
+          {/* Right Side - Event Image */}
+          <div className="event-image-container">
+            <img src={upcomingEvent.image} alt={upcomingEvent.title} className="event-image" />
           </div>
         </div>
-
-        {/* Right Side - Event Image */}
-        <div className="event-image-container">
-          <img src={upcomingEvent.image} alt={upcomingEvent.title} className="event-image" />
-        </div>
-      </div>
+      )}
 
       <style>{`
         .featured-events-wrapper {
           padding: 4rem 2rem;
-          background-color: #F8B9A0;
+          background-color: #f8f4ef;;
           margin: 0;
         }
 
@@ -96,6 +62,18 @@ function FeaturedEvents() {
           color: #333;
           text-align: left;
           margin-bottom: 3rem;
+        }
+
+        .featured-events-section {
+          padding: 0;
+          margin: 0;
+        }
+
+        .no-events {
+          text-align: center;
+          color: #666;
+          font-size: 1rem;
+          margin: 0;
         }
 
         .featured-event-container {

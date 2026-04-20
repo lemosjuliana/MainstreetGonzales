@@ -21,6 +21,7 @@ const blocks = [
     [29.5032042, -97.4542560], // Coordinate 16
     [29.5054181, -97.4552327], // Coordinate 17
     [29.5055989, -97.4547067], // Coordinate 18
+    // Thanks to Brandon Page that looked for the Coordinates :)
   ],
 ];
 

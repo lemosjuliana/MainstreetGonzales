@@ -57,7 +57,7 @@ const events = [
     id: "e6",
     title: "Shop Crawls",
     description: "Explore downtown like never before with our themed Shop Crawls! From the festive Rum Run to a cheerful Holiday Jingle Mingle, enjoy local shopping, special promotions, and a lively community vibe.",
-    category: "Shopping & Seasonal Events",
+    category: "Fall",
     location: "Downtown Gonzales",
     date: "2026-11-15",
     image: ShopCrawl
