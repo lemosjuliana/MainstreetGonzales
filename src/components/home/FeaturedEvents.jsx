@@ -51,7 +51,9 @@ function FeaturedEvents() {
       <style>{`
         .featured-events-wrapper {
           padding: 4rem 2rem;
-          background-color: #f8f4ef;;
+          background:
+            radial-gradient(circle at top right, rgba(208, 169, 96, 0.2), transparent 30%),
+            linear-gradient(180deg, #fbf5eb 40%, #fffdf9 100%);
           margin: 0;
         }
 

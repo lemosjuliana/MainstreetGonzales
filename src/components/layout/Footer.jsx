@@ -36,7 +36,7 @@ function Footer() {
         <div className="footer-column">
           <h3>Mainstreet Programs</h3>
           <div className="programs-links">
-            <button onClick={() => navigate('/about')}>
+            <button onClick={() => navigate('/veterans')}>
               Honor Our Veterans
             </button>
             <button onClick={() => navigate('/grants')}>

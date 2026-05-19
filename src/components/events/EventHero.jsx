@@ -100,10 +100,9 @@ function EventHero() {
 
         .events-hero-title {
           font-family: 'IBM Plex Serif', serif;
-          font-size: 3rem;
-          font-weight: 700;
-          line-height: 1.2;
           margin: 0 0 1rem 0;
+          font-size: clamp(2.5rem, 5vw, 4rem);
+          line-height: 1.05;
           color: white;
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }

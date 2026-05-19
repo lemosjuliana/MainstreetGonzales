@@ -123,7 +123,9 @@ function EventList() {
       <style>{`
         .event-list-section {
           padding: 4rem 2rem;
-          background: #f8f4ef;
+          background:
+            radial-gradient(circle at top right, rgba(208, 169, 96, 0.2), transparent 30%),
+            linear-gradient(180deg, #fbf5eb 0%, #fffdf9 100%);
         }
 
         .event-list-shell {

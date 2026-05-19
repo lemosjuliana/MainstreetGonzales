@@ -16,11 +16,12 @@ import KarenJ from "../assets/images/Board Members/KarenJ.jpg"
 import MeenaP from "../assets/images/Board Members/MeenaP.jpg"
 import MichelleT from "../assets/images/Board Members/MichelleT.JPG"
 import NaomiW from "../assets/images/Board Members/NaomiW.jpg"
+import TiffanyP from "../assets/images/Board Members/TiffanyP.jpg"
 import ValerieD from "../assets/images/Board Members/ValerieD.png"
 
 const formerBoard = [
     {
-        id: fb1,
+        id: "fb1",
         name: "Adriane Hastings",
         occupation: "Business Development Manager",
         title: "Main Street Board Member",
@@ -28,7 +29,7 @@ const formerBoard = [
         image: AdrianeH
     },
     {
-        id: fb2,
+        id: "fb2",
         name: "Amy Cernosek",
         occupation: "Angels & Outlaws, Owner & Operator",
         title: "Main Street Board Member",
@@ -36,7 +37,7 @@ const formerBoard = [
         image: AmyC
     },
     {
-        id: fb3,
+        id: "fb3",
         name: "Britney Caka",
         occupation: "Farm Bureau Agent",
         title: "Main Street Board Member",
@@ -44,7 +45,7 @@ const formerBoard = [
         image: BritneyC
     },
     {
-        id: fb4,
+        id: "fb4",
         name: "Carlos Camarillo",
         occupation: "W. B. Farm & Ranch",
         title: "Main Street Board Member",
@@ -52,7 +53,7 @@ const formerBoard = [
         image: CarlosC
     },
     {
-        id: fb5,
+        id: "fb5",
         name: "Cherri Lane",
         occupation: "Comfy Pet and Lou's Canoes, Owner & Operator",
         title: "Main Street Board Member",
@@ -60,7 +61,7 @@ const formerBoard = [
         image: CherriL
     },
     {
-        id: fb6,
+        id: "fb6",
         name: "Christine Presley",
         occupation: "GVEC",
         title: "Main Street Board Member",
@@ -68,7 +69,7 @@ const formerBoard = [
         image: ChristineP
     },
     {
-        id: fb7,
+        id: "fb7",
         name: "Connie Dolezal",
         occupation: "Shear Designs Boutique, Owner & Operator",
         title: "Main Street Board Member, Treasurer",
@@ -76,7 +77,7 @@ const formerBoard = [
         image: ConnieD
     },
     {
-        id: fb8,
+        id: "fb8",
         name: "D'Anna Robinson",
         occupation: "Excel Complete Home Healthcare, Title-Marketing Coordinator",
         title: "Main Street Board Member",
@@ -84,7 +85,7 @@ const formerBoard = [
         image: DAnnaR
     },
     {
-        id: fb9,
+        id: "fb9",
         name: "Debbie Toliver",
         occupation: "D&K Sweets and Cleans",
         title: "Main Street Board Member",
@@ -92,7 +93,7 @@ const formerBoard = [
         image: DebbieT
     },
     {
-        id: fb10,
+        id: "fb10",
         name: "DeDe DeStefano",
         occupation: "Communications Executive",
         title: "Main Street Board Member",
@@ -100,7 +101,7 @@ const formerBoard = [
         image: DeDeD
     },
     {
-        id: fb11,
+        id: "fb11",
         name: "Destiny Pierpont",
         occupation: "Elandee Boutique, Owner",
         title: "Main Street Board Member",
@@ -108,7 +109,7 @@ const formerBoard = [
         image: DestinyP
     },
     {
-        id: fb12,
+        id: "fb12",
         name: "John Boothe",
         occupation: "BYK Additives",
         title: "Main Street Board Member, Vice Chairman",
@@ -116,7 +117,7 @@ const formerBoard = [
         image: JohnB
     },
     {
-        id: fb13,
+        id: "fb13",
         name: "Karen Jacobs",
         occupation: "Local Author & Owner of the historic Long Branch Saloon",
         title: "Main Street Board Member, Secretary",
@@ -124,7 +125,7 @@ const formerBoard = [
         image: KarenJ
     },
     {
-        id: fb14,
+        id: "fb14",
         name: "Meena Patel",
         occupation: "Best Western Regency Inn & Suites, Owner & The Texas Lodge, Owner",
         title: "Main Street Board Member, Recording Secretary",
@@ -132,7 +133,7 @@ const formerBoard = [
         image: MeenaP
     },
     {
-        id: fb15,
+        id: "fb15",
         name: "Michelle Tucker",
         occupation: "Gonzales Gateway Fellowship Church",
         title: "Main Street Board Member",
@@ -140,7 +141,7 @@ const formerBoard = [
         image: MichelleT
     },
     {
-        id: fb16,
+        id: "fb16",
         name: "Naomi Wells",
         occupation: "Rackspace Technology, Customer Support",
         title: "Main Street Board Member",
@@ -148,7 +149,15 @@ const formerBoard = [
         image: NaomiW
     },
     {
-        id: fb17,
+        id: "fb17",
+        name: "Tiffany Hutchinson-Padilla",
+        occupation: "Main Street Director",
+        title: "Main Street Director",
+        time_service: "2022 - 2026",
+        image: TiffanyP
+    },
+    {
+        id: "fb18",
         name: "Valerie Daniels",
         occupation: "Probation Officer",
         title: "Main Street Board Member",

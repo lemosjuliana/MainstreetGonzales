@@ -44,7 +44,9 @@ function EventDetails() {
         .event-details-card {
           max-width: 1050px;
           margin: 0 auto;
-          background: #f8f4ef;
+          background:
+            radial-gradient(circle at top right, rgba(208, 169, 96, 0.2), transparent 30%),
+            linear-gradient(180deg, #fbf5eb 0%, #fffdf9 100%);
           border-radius: 8px;
           overflow: hidden;
           box-shadow: 0 8px 24px rgba(30, 20, 10, 0.16);

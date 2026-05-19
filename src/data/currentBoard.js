@@ -8,11 +8,10 @@ import GregoryW from "../assets/images/Board Members/GregoryW.jpg"
 import JoeyM from "../assets/images/Board Members/JoeyM.jpg"
 import KaylaC from "../assets/images/Board Members/KaylaC.jpg"
 import LindaB from "../assets/images/Board Members/LindaB.jpg"
-import TiffanyP from "../assets/images/Board Members/TiffanyP.jpg"
 
 const currentBoard = [
     {
-        id: cb1,
+        id: "cb1",
         name: "Amy Peeler",
         occupation: "Court Administrator",
         title: "Main Street Board President",
@@ -20,7 +19,7 @@ const currentBoard = [
         image: AmyP
     },
     {
-        id: cb2,
+        id: "cb2",
         name: "Brandon Page",
         occupation: "SouthWest Engineers",
         title: "Main Street Board Treasurer",
@@ -28,7 +27,7 @@ const currentBoard = [
         image: BrandonP
     },
     {
-        id: cb3,
+        id: "cb3",
         name: "Charles Kerr",
         occupation: "Morgan Bulk Driver",
         title: "Main Street Board Member",
@@ -36,7 +35,7 @@ const currentBoard = [
         image: CharlesK
     },
     {
-        id: cb4,
+        id: "cb4",
         name: "Glori Wyatt",
         occupation: "Business Owner, GW Salon",
         title: "Main Street Board Secretary",
@@ -44,7 +43,7 @@ const currentBoard = [
         image: GloriW
     },
     {
-        id: cb5,
+        id: "cb5",
         name: "Gregory Webb",
         occupation: " ",
         title: "Main Street Board Secretary",
@@ -52,7 +51,7 @@ const currentBoard = [
         image: GregoryW
     },
     {
-        id: cb6,
+        id: "cb6",
         name: "Joey Moss",
         occupation: "McCoy's Building Supply",
         title: "Main Street Board Member",
@@ -60,7 +59,7 @@ const currentBoard = [
         image: JoeyM
     },
     {
-        id: cb7,
+        id: "cb7",
         name: "Kayla Craven",
         occupation: "Crew Men's Store",
         title: "Main Street Board Vice President",
@@ -68,21 +67,14 @@ const currentBoard = [
         image: KaylaC
     },
     {
-        id: cb8,
+        id: "cb8",
         name: "Linda Brown",
         occupation: "Peach Creek Antiques",
         title: "Main Street Board Member",
         time_service: "2022 - Present",
         image: LindaB
     },
-     {
-        id: cb9,
-        name: "Tiffany Hutchinson-Padilla",
-        occupation: " ",
-        title: "Main Street Director",
-        time_service: "2022 - Present",
-        image: TiffanyP
-    },
+     
 
 ]
 export default currentBoard;
