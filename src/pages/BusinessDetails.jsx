@@ -1,5 +1,12 @@
-function BusinessDetails() {
-  return <div>BusinessDetails</div>
+import PageLayout from "../components/layout/PageLayout"
+import BusinessDetails from "../components/businesses/BusinessDetails"
+
+function BusinessDetailsPage() {
+  return (
+    <PageLayout>
+      <BusinessDetails />
+    </PageLayout>
+  )
 }
 
-export default BusinessDetails
+export default BusinessDetailsPage
