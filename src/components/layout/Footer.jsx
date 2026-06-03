@@ -1,4 +1,4 @@
-import logo from "../../assets/icons/logo.png"
+import logo from "../../assets/icons/logo_footer.png"
 import facebook from "../../assets/icons/facebook_icon.png"
 import instagram from "../../assets/icons/instagram_icon.png"
 import { useNavigate } from 'react-router-dom'
@@ -29,7 +29,7 @@ function Footer() {
         <div className="footer-column contact-info">
           <h3>Contact Us</h3>
           <p>(830) 672-2815</p>
-          <p>tpadilla@gonzales.texas.gov</p>
+          <p>mainstreet@gonzales.texas.gov</p>
         </div>
 
         {/* Right Column */}
@@ -164,7 +164,7 @@ function Footer() {
           padding: 2rem;
           text-align: center;
           font-family: 'IBM Plex Serif', serif;
-          color: #605551;
+          color: #c2b2ac;
         }
 
         @media (max-width: 768px) {
