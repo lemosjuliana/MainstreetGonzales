@@ -86,7 +86,7 @@ function EventHero() {
         .events-hero-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(0, 0, 0, 0.72);
+          background: rgba(0, 0, 0, 0.80);
           z-index: 2;
         }
 
@@ -94,8 +94,9 @@ function EventHero() {
           position: relative;
           z-index: 3;
           max-width: 700px;
-          padding: 3rem 2rem;
+          padding: 5rem 2rem;
           color: #fff;
+          margin-left: 5rem;
         }
 
         .events-hero-title {
@@ -155,6 +156,7 @@ function EventHero() {
 
           .events-hero-content {
             padding: 2rem 1rem;
+            margin-left: 1rem;
           }
 
           .events-hero-title {

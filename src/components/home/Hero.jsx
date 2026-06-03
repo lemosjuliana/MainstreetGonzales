@@ -50,17 +50,18 @@ function Hero() {
           left: 0;
           width: 100%;
           height: 100%;
-          background: rgba(0, 0, 0, 0.63);
+          background: rgba(0, 0, 0, 0.75);
           z-index: 2;
         }
 
         .hero-content {
           position: relative;
           z-index: 3;
-          padding: 3rem 2rem;
+          padding: 5rem 2rem;
           max-width: 600px;
           color: white;
           width: 100%;
+          margin-left: 5rem;
         }
 
         .hero-heading {
@@ -142,6 +143,7 @@ function Hero() {
 
           .hero-content {
             padding: 1rem 0.75rem;
+            margin-left: 1rem;
           }
 
           .hero-button {

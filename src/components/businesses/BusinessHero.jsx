@@ -79,7 +79,7 @@ function BusinessHero() {
         .business-hero-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(0, 0, 0, 0.72);
+          background: rgba(0, 0, 0, 0.80);
           z-index: 2;
         }
 
@@ -87,8 +87,9 @@ function BusinessHero() {
           position: relative;
           z-index: 3;
           max-width: 760px;
-          padding: 3rem 2rem;
+          padding: 5rem 2rem;
           color: #fff;
+          margin-left: 5rem;
         }
 
         .business-of-the-month-label {
@@ -97,7 +98,7 @@ function BusinessHero() {
           margin: 0 0 1rem 0;
           padding: 0.45rem 0.9rem;
           border-radius: 999px;
-          background: rgba(244, 150, 113, 0.95);
+          background:  #8E300B;;
           color: white;
           font-family: 'IBM Plex Serif', serif;
           font-size: 0.9rem;
@@ -150,19 +151,20 @@ function BusinessHero() {
           justify-content: center;
           padding: 0.9rem 1.3rem;
           border-radius: 8px;
-          background: #F49671;
+          background-color: #8E300B;
           color: white;
           text-decoration: none;
+          cursor: pointer;
           font-family: 'IBM Plex Serif', serif;
-          font-weight: 700;
-          transition:
-            background-color 0.2s ease,
-            transform 0.2s ease;
-          box-shadow: 0 4px 12px rgba(30, 20, 10, 0.2);
+          font-weight: 600;
+         transition: all 0.3s ease;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .business-hero-button:hover {
-          background: #e57f58;
+          background-color: #BE400E;
+          color: white;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         .business-hero-button:active {
@@ -186,6 +188,7 @@ function BusinessHero() {
 
           .business-hero-content {
             padding: 2rem 1rem;
+            margin-left: 1rem;
           }
 
           .business-hero-title {
