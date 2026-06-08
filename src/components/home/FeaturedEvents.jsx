@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import events from '../../data/events'
+import { Link } from 'react-router-dom'
 
 function FeaturedEvents() {
   // Get the most upcoming event
@@ -31,21 +32,45 @@ function FeaturedEvents() {
         </div>
       ) : (
         <div className="featured-event-container">
-          {/* Left Side - Event Info */}
-          <div className="event-info">
-            <h2 className="event-title">{upcomingEvent.title}</h2>
-            <p className="event-description">{upcomingEvent.description}</p>
-            <div className="event-details">
-              <p><strong>Date:</strong> {new Date(upcomingEvent.date).toLocaleDateString()}</p>
-              <p><strong>Location:</strong> {upcomingEvent.location}</p>
-            </div>
-          </div>
 
-          {/* Right Side - Event Image */}
-          <div className="event-image-container">
-            <img src={upcomingEvent.image} alt={upcomingEvent.title} className="event-image" />
-          </div>
-        </div>
+  {/* Left Side - Event Image */}
+  <div className="event-image-container">
+    <img
+      src={upcomingEvent.image}
+      alt={upcomingEvent.title}
+      className="event-image"
+    />
+  </div>
+
+  {/* Right Side - Event Info */}
+  <div className="event-info">
+    <h2 className="event-title">{upcomingEvent.title}</h2>
+
+    <p className="event-description">
+      {upcomingEvent.description}
+    </p>
+
+    <div className="event-details">
+      <p>
+        <strong>Date:</strong>{' '}
+        {new Date(upcomingEvent.date).toLocaleDateString()}
+      </p>
+
+      <p>
+        <strong>Location:</strong>{' '}
+        {upcomingEvent.location}
+      </p>
+    </div>
+
+    <Link
+      to={`/events/${upcomingEvent.id}`}
+      className="learn-more-button"
+    >
+      Learn More
+    </Link>
+  </div>
+
+</div>
       )}
 
       <style>{`
@@ -58,12 +83,12 @@ function FeaturedEvents() {
         }
 
         .featured-events-title {
+          color: #2e2118;
           font-family: 'IBM Plex Serif', serif;
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #333;
-          text-align: left;
-          margin-bottom: 3rem;
+          font-size: clamp(2.5rem, 5vw, 3.5rem);
+          line-height: 1.05;
+          margin: 5;
+          padding: 1.5rem 4rem;
         }
 
         .featured-events-section {
@@ -133,6 +158,30 @@ function FeaturedEvents() {
           height: 100%;
           object-fit: cover;
         }
+        
+        .learn-more-button {
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+
+        background-color: #8E300B;
+        color: white;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+        .learn-more-button:hover {
+        background-color: #BE400E;
+        color: white;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
 
         /* Responsive Design */
         @media (max-width: 1024px) {
@@ -159,14 +208,20 @@ function FeaturedEvents() {
           }
 
           .featured-events-title {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 2.5rem;
           }
 
           .featured-event-container {
             grid-template-columns: 1fr;
             gap: 2rem;
           }
+          
+           .featured-events-wrapper {
+          padding: 3rem 1.5rem;
+    
+        }
 
           .event-info {
             padding: 1.5rem;

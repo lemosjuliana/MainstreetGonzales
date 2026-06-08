@@ -88,7 +88,6 @@ function About() {
         .about-description {
           color: #45362a;
           font-family: 'IBM Plex Serif', serif;
-          font-size: 1.04rem;
           line-height: 1.85;
           margin: 0;
         }

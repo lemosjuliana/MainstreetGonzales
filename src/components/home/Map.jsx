@@ -56,14 +56,14 @@ export default function Map() {
 
       <style>{`
         .map-title {
-          padding: 1rem 2rem;
+          color: #2e2118;
           font-family: 'IBM Plex Serif', serif;
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #333;
-          text-align: left;
-        }
+          font-size: clamp(2.5rem, 5vw, 3.5rem);
+          line-height: 1.05;
+          margin: 5;
+          padding: 0.5rem 4rem;
 
+        }
         .map-title-highlight {
           color: #BE400E;
         }
@@ -72,6 +72,18 @@ export default function Map() {
           padding: 1rem 2rem;
           text-align: left;
           margin-bottom: 2rem;
+          padding: 0.5rem 4rem;
+        }
+
+        @media (max-width: 768px) {
+        .map-title{
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 3.2rem;
+        }
+        .map-description {
+        font-size: 1rem;
+        padding: 0.5rem 3rem;}
         }
       `}</style>
     </section>

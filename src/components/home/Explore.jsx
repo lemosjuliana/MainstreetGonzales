@@ -94,16 +94,18 @@ function Explore() {
         }
 
         .explore-title {
+          color: #2e2118;
           font-family: 'IBM Plex Serif', serif;
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #333;
-          text-align: left;
+          font-size: clamp(2.5rem, 5vw, 3.5rem);
+          line-height: 1.05;
+          margin: 5;
+          padding: 1.5rem 4rem;
         }
 
         .explore-description {
           text-align: left;
           margin-bottom: 3rem;
+          padding: 0.5rem 4rem;
         }
 
         .explore-highlight {
@@ -206,8 +208,15 @@ function Explore() {
 
           .explore-title {
             font-size: 1.75rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 2rem;
           }
+
+          .explore-description{
+          font-size: 1rem;
+          padding: 0.5rem 2rem;
+          }
+
 
           .explore-cards {
             grid-template-columns: 1fr;
