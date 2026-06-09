@@ -68,6 +68,12 @@ function BusinessList() {
     return groups
   }, [filteredBusinesses])
 
+  const visibleCategories = useMemo(() => {
+    return businessCategories.filter(
+      (category) => groupedBusinesses[category].length > 0
+    )
+  }, [groupedBusinesses])
+
   const hasResults = filteredBusinesses.length > 0
 
   return (
@@ -130,7 +136,7 @@ function BusinessList() {
 
         {hasResults && (
           <div className="business-groups">
-            {businessCategories.map((category) => (
+            {visibleCategories.map((category) => (
               <div
                 key={category}
                 className="business-group"
@@ -139,47 +145,41 @@ function BusinessList() {
                   {category}
                 </h3>
 
-                {groupedBusinesses[category].length === 0 ? (
-                  <p className="business-category-empty">
-                    No businesses in this category.
-                  </p>
-                ) : (
-                  <ul className="business-category-list">
-                    {groupedBusinesses[category].map(
-                      (business) => (
-                        <li
-                          key={business.id}
-                          className="business-category-item"
+                <ul className="business-category-list">
+                  {groupedBusinesses[category].map(
+                    (business) => (
+                      <li
+                        key={business.id}
+                        className="business-category-item"
+                      >
+                        <button
+                          type="button"
+                          className="business-item-button"
+                          onClick={() =>
+                            navigate(
+                              `/businesses/${business.id}`
+                            )
+                          }
                         >
-                          <button
-                            type="button"
-                            className="business-item-button"
-                            onClick={() =>
-                              navigate(
-                                `/businesses/${business.id}`
-                              )
-                            }
-                          >
-                            <p className="business-name">
-                              {business.name}
-                            </p>
+                          <p className="business-name">
+                            {business.name}
+                          </p>
 
-                            <p className="business-meta">
-                              {business.address}
-                            </p>
-                          </button>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                )}
+                          <p className="business-meta">
+                            {business.address}
+                          </p>
+                        </button>
+                      </li>
+                    )
+                  )}
+                </ul>
               </div>
             ))}
           </div>
         )}
-      </div>
+        </div>
 
-      <style>{`
+        <style>{`
         .business-list-section {
           padding: 4rem 2rem;
           background:
