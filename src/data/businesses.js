@@ -27,7 +27,7 @@ import CrystalTheater from "../assets/images/Main Street Businesses/crystal-thea
 import CZAesthetics from "../assets/images/Main Street Businesses/cz-aesthetics.png" // Look for image
 import DilworthInn from "../assets/images/Main Street Businesses/dilworth-inn.webp"
 import DoggonnitPetGroomers from "../assets/images/Main Street Businesses/doggonnit-pet-groomers.jpg"
-import DoucetAndAssociates from "../assets/images/Main Street Businesses/doucet-associates.PNG"
+import DoucetAndAssociates from "../assets/images/Main Street Businesses/doucet-associates.png"
 import EBarFeed from "../assets/images/Main Street Businesses/e-bar-feed.webp"
 import EdwardJones from "../assets/images/Main Street Businesses/edward-jones.webp"
 import EdwardsFurniture from "../assets/images/Main Street Businesses/edwards-furniture.webp"
